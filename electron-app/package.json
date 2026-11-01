@@ -1,0 +1,34 @@
+{
+  "name": "diffsuite-electron",
+  "version": "0.2.1",
+  "description": "Electron GUI for DiffSuite DWI fitting",
+  "main": "dist-electron/main/main.js",
+  "author": "DiffSuite",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite build && node_modules/.bin/electron --no-sandbox --disable-gpu --in-process-gpu --no-zygote --disable-dev-shm-usage .",
+    "dev:vite": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "build:win": "electron-vite build && electron-builder --win",
+    "build:mac": "electron-vite build && electron-builder --mac",
+    "build:linux": "electron-vite build && electron-builder --linux"
+  },
+  "dependencies": {
+    "nifti-reader-js": "^0.6.8",
+    "node-fetch": "^2.7.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^28.3.3",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.0"
+  }
+}

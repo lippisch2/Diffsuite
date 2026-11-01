@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffsuite"
+version = "0.2.1"
+description = "Modular DWI fitting and b-value extrapolation frontend"
+requires-python = ">=3.9"
+dependencies = ["numpy", "nibabel", "scipy", "pydicom", "rich", "tqdm", "matplotlib", "SimpleITK>=2.0"]
+
+[project.scripts]
+diffsuite = "diffsuite.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

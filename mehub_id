@@ -1,0 +1,8 @@
+{
+  "name": "DIFFSUITE",
+  "description": "DWI (Diffusion Weighted Imaging) model fitting and b-value extrapolation on 4D NIfTI/DICOM. CLI (src-layout) plus a full Electron + React + TypeScript desktop GUI talking to a FastAPI backend (port 18923): 4-step wizard, canvas NIfTI viewer, interactive ellipse ROI, and multi-b signal extrapolation.",
+  "tags": [],
+  "stack": "auto",
+  "progress": "stable",
+  "version": "1.0"
+}

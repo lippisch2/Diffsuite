@@ -1,0 +1,24 @@
+# --- Build artifacts (regenerable) ---
+electron-app/node_modules/
+electron-app/dist-electron/
+
+# Dev tooling
+.opencode/
+
+# Bundled installers / archives
+*.exe
+*.blockmap
+*.AppImage
+*.dmg
+
+# Python
+__pycache__/
+*.pyc
+build/
+dist/
+*.egg-info/
+
+# Editor / OS
+.DS_Store
+*.log
+*.tmp

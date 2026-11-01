@@ -1,0 +1,23 @@
+appId: com.diffsuite.app
+productName: DiffSuite
+directories:
+  output: dist-electron/dist
+  buildResources: resources
+files:
+  - dist-electron/renderer/**
+  - dist-electron/main/**
+  - dist-electron/preload/**
+  - package.json
+win:
+  target:
+    - nsis
+    - portable
+  artifactName: DiffSuite-${version}-setup.${ext}
+portable:
+  artifactName: DiffSuite-${version}-portable.${ext}
+mac:
+  target: dmg
+  artifactName: DiffSuite-${version}.${ext}
+linux:
+  target: AppImage
+  artifactName: DiffSuite-${version}.${ext}
