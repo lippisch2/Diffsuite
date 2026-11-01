@@ -128,6 +128,15 @@ Per-model documentation with parameter ranges, assumptions, and references lives
 - Node.js ≥ 18 and npm (desktop GUI only)
 - Windows, Linux, or macOS
 
+### Prebuilt desktop GUI
+
+Portable GUI builds are published on the [Releases](https://github.com/lippisch2/Diffsuite/releases) page:
+
+- **Windows x64** — `DiffSuite-0.2.1-portable.exe` (single self-extracting executable)
+- **Linux x64** — `DiffSuite-0.2.1.AppImage` (`chmod +x` and run; use `--appimage-extract-and-run` if FUSE is unavailable)
+
+Both are thin Electron shells and still require Python + the DiffSuite package on the target machine — see [Portable GUI prerequisites](#portable-gui-prerequisites).
+
 ### Python package (CLI + API backend)
 
 ```bash
