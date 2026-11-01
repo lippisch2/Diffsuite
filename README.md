@@ -8,8 +8,21 @@ DiffSuite is a modular Python toolkit for voxel-wise fitting of diffusion MRI si
 
 ---
 
+## Screenshots
+
+![DiffSuite NIfTI viewer](docs/gui-viewer.png)
+
+*Embedded NIfTI viewer — here showing a fitted diffusion map with the turbo colormap, slice navigation, and the selection/histogram study tools.*
+
+![DiffSuite model selection](docs/gui-model.png)
+
+*Model selection — every compatible model is listed with its equation, b-value requirements, outputs, and a one-line explanation; incompatible models stay visible as blocked (or can be force-fitted).*
+
+---
+
 ## Table of contents
 
+- [Screenshots](#screenshots)
 - [Highlights](#highlights)
 - [Architecture](#architecture)
 - [Supported models](#supported-models)
